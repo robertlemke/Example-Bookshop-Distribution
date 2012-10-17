@@ -14,7 +14,8 @@
     },
     "require": {
         "typo3/flow": "dev-master",
-        "typo3/welcome": "dev-master"
+        "typo3/welcome": "dev-master",
+        "robertlemke/example-bookshop": "dev-master"
 	 },
     "require-dev": {
         "typo3/kickstart": "dev-master",

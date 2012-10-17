@@ -1,5 +1,5 @@
 {
-    "hash": "9b906a390e2f73adbc196f4e98ec8074",
+    "hash": "76811e9921b80760694735e40be9914f",
     "packages": [
         {
             "name": "doctrine/common",
@@ -236,6 +236,81 @@
             ]
         },
         {
+            "name": "imagine/Imagine",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine",
+                "reference": "v0.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/avalanche123/Imagine/zipball/v0.3.0",
+                "reference": "v0.3.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "time": "1343522118",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Imagine": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "image manipulation",
+                "image processing",
+                "drawing",
+                "graphics"
+            ]
+        },
+        {
+            "name": "robertlemke/example-bookshop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/robertlemke/example-bookshop.git",
+                "reference": "d933068b75511e571b952718994b5850ab17cd54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/robertlemke/example-bookshop/get/d933068b75511e571b952718994b5850ab17cd54.zip",
+                "reference": "d933068b75511e571b952718994b5850ab17cd54",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/flow": "*",
+                "typo3/media": "*"
+            },
+            "time": "1350462775",
+            "type": "typo3-flow-package",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "RobertLemke\\Example\\Bookshop": "Classes"
+                }
+            },
+            "description": "An example application for the Getting Into Flow tutorial."
+        },
+        {
             "name": "symfony/dom-crawler",
             "version": "dev-master",
             "target-dir": "Symfony/Component/DomCrawler",
@@ -463,6 +538,49 @@
             "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 5.0, also backported to TYPO3 4.x"
         },
         {
+            "name": "typo3/imagine",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/FLOW3/Packages/Imagine.git",
+                "reference": "70d26f23230e84c94bb4ce15209cc374c7c94eae"
+            },
+            "require": {
+                "typo3/flow": "*",
+                "imagine/imagine": "*"
+            },
+            "time": "1349121824",
+            "type": "typo3-flow-package",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "TYPO3\\Imagine": "Classes"
+                }
+            }
+        },
+        {
+            "name": "typo3/media",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Media.git",
+                "reference": "e23f856e5c38f109c238e8cc88f4f1745000fd56"
+            },
+            "require": {
+                "typo3/flow": "*",
+                "typo3/imagine": "*"
+            },
+            "time": "1349173182",
+            "type": "typo3-flow-package",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "TYPO3\\Media": "Classes"
+                }
+            },
+            "description": "The Media package"
+        },
+        {
             "name": "typo3/party",
             "version": "dev-master",
             "source": {
@@ -520,6 +638,7 @@
     "stability-flags": {
         "typo3/flow": 20,
         "typo3/welcome": 20,
+        "robertlemke/example-bookshop": 20,
         "typo3/kickstart": 20,
         "typo3/buildessentials": 20
     }
