@@ -1,6 +1,6 @@
 {
-    "name": "typo3/flow-base-distribution",
-    "description" : "TYPO3 Flow Base Distribution",
+    "name": "robertlemke/example-bookshop-distribution",
+    "description" : "Distribution for the bookshop example",
     "license": "LGPL-3.0+",
     "repositories": [
         {
@@ -15,7 +15,7 @@
     "require": {
         "typo3/flow": "dev-master",
         "typo3/welcome": "dev-master"
-    },
+	 },
     "require-dev": {
         "typo3/kickstart": "dev-master",
         "typo3/buildessentials": "dev-master",
