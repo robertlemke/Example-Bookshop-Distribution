@@ -15,7 +15,8 @@
     "require": {
         "typo3/flow": "dev-master",
         "typo3/welcome": "dev-master",
-        "robertlemke/example-bookshop": "dev-master"
+        "robertlemke/example-bookshop": "dev-master",
+        "typo3/twitter-bootstrap": "*"
 	 },
     "require-dev": {
         "typo3/kickstart": "dev-master",

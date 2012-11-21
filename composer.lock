@@ -1,33 +1,38 @@
 {
-    "hash": "76811e9921b80760694735e40be9914f",
+    "hash": "6f588752d33affea6d4fddc65c2a7900",
     "packages": [
         {
             "name": "doctrine/common",
-            "version": "2.2.3",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common",
-                "reference": "2.2.3"
+                "reference": "bb0aebbf234db52df476a2b473d434745b34221c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/common/zipball/2.2.3",
-                "reference": "2.2.3",
+                "url": "https://github.com/doctrine/common/archive/bb0aebbf234db52df476a2b473d434745b34221c.zip",
+                "reference": "bb0aebbf234db52df476a2b473d434745b34221c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "2012-08-29 01:04:14",
+            "time": "1348120518",
             "type": "library",
-            "installation-source": "dist",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
                 }
             },
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -49,7 +54,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -66,33 +71,79 @@
             ]
         },
         {
-            "name": "doctrine/dbal",
-            "version": "2.2.2",
+            "name": "doctrine/data-fixtures",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/dbal",
-                "reference": "2.2.2"
+                "url": "https://github.com/doctrine/data-fixtures.git",
+                "reference": "98e059213cd8bf70f1203a3c9acc3c7e8afc2c89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/zipball/2.2.2",
-                "reference": "2.2.2",
+                "url": "https://github.com/doctrine/data-fixtures/archive/98e059213cd8bf70f1203a3c9acc3c7e8afc2c89.zip",
+                "reference": "98e059213cd8bf70f1203a3c9acc3c7e8afc2c89",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "time": "1353423624",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\Common\\DataFixtures": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                }
+            ],
+            "description": "Data Fixtures for all Doctrine Object Managers",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database"
+            ]
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "2.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal",
+                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/dbal/archive/292d5edd17e0a9b9a7ee9eb20d6ae1033059153f.zip",
+                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "doctrine/common": ">=2.2.0,<=2.2.99"
+                "doctrine/common": "2.3.*"
             },
-            "time": "2012-04-13 00:56:12",
+            "time": "1352716871",
             "type": "library",
-            "installation-source": "dist",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL": "lib/"
                 }
             },
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -129,12 +180,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations",
-                "reference": "v1.0-ALPHA1"
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/migrations/zipball/v1.0-ALPHA1",
-                "reference": "v1.0-ALPHA1",
+                "url": "https://github.com/doctrine/migrations/archive/c1d875ce7d092dd1bc7508c3867b5c6b97431e43.zip",
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43",
                 "shasum": ""
             },
             "require": {
@@ -148,7 +199,7 @@
             "suggest": {
                 "symfony/console": "to run the migration from the console"
             },
-            "time": "1349435713",
+            "time": "1350643044",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -179,34 +230,46 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "2.2.2",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "2.2.2"
+                "reference": "77d060ab74212919f1eaace72842ea43bf420f43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/zipball/2.2.2",
-                "reference": "2.2.2",
+                "url": "https://github.com/doctrine/doctrine2/archive/77d060ab74212919f1eaace72842ea43bf420f43.zip",
+                "reference": "77d060ab74212919f1eaace72842ea43bf420f43",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "ext-pdo": "*",
-                "doctrine/common": ">=2.2.0,<2.2.99",
-                "doctrine/dbal": ">=2.2.1,<2.2.99"
+                "symfony/console": "2.*",
+                "doctrine/dbal": "2.3.*"
             },
-            "time": "2012-04-13 01:02:34",
+            "suggest": {
+                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+            },
+            "time": "1352731781",
+            "bin": [
+                "bin/doctrine",
+                "bin/doctrine.php"
+            ],
             "type": "library",
-            "installation-source": "dist",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\ORM": "lib/"
                 }
             },
             "license": [
-                "LGPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -245,7 +308,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/avalanche123/Imagine/zipball/v0.3.0",
+                "url": "https://github.com/avalanche123/Imagine/archive/v0.3.0.zip",
                 "reference": "v0.3.0",
                 "shasum": ""
             },
@@ -288,19 +351,20 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/robertlemke/example-bookshop.git",
-                "reference": "d933068b75511e571b952718994b5850ab17cd54"
+                "reference": "cfd06e5610486dc4a12c0e887f859af8e432425a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/robertlemke/example-bookshop/get/d933068b75511e571b952718994b5850ab17cd54.zip",
-                "reference": "d933068b75511e571b952718994b5850ab17cd54",
+                "url": "https://bitbucket.org/robertlemke/example-bookshop/get/cfd06e5610486dc4a12c0e887f859af8e432425a.zip",
+                "reference": "cfd06e5610486dc4a12c0e887f859af8e432425a",
                 "shasum": ""
             },
             "require": {
                 "typo3/flow": "*",
-                "typo3/media": "*"
+                "typo3/media": "*",
+                "typo3/twitter-bootstrap": "*"
             },
-            "time": "1350462775",
+            "time": "1350633141",
             "type": "typo3-flow-package",
             "installation-source": "source",
             "autoload": {
@@ -311,18 +375,65 @@
             "description": "An example application for the Getting Into Flow tutorial."
         },
         {
+            "name": "symfony/console",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console",
+                "reference": "003a487a674175a1d2e62f205ecd91ffe85554b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/Console/archive/003a487a674175a1d2e62f205ecd91ffe85554b1.zip",
+                "reference": "003a487a674175a1d2e62f205ecd91ffe85554b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "time": "1353329932",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com"
+        },
+        {
             "name": "symfony/dom-crawler",
             "version": "dev-master",
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler",
-                "reference": "9cd18f60c07cbf4a70f4a42ff2e7918c831cde62"
+                "reference": "9d95ebb0e1c1a037732a8899af5cc376db82561d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/DomCrawler/zipball/9cd18f60c07cbf4a70f4a42ff2e7918c831cde62",
-                "reference": "9cd18f60c07cbf4a70f4a42ff2e7918c831cde62",
+                "url": "https://github.com/symfony/DomCrawler/archive/9d95ebb0e1c1a037732a8899af5cc376db82561d.zip",
+                "reference": "9d95ebb0e1c1a037732a8899af5cc376db82561d",
                 "shasum": ""
             },
             "require": {
@@ -334,7 +445,7 @@
             "suggest": {
                 "symfony/css-selector": "2.2.*"
             },
-            "time": "1350207404",
+            "time": "1353329932",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -370,18 +481,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml",
-                "reference": "1f7ba14c4b263dbf701e25705b0b2175a850a784"
+                "reference": "bed4fddc24392513e01b32a78d600b1272ed9a6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/zipball/1f7ba14c4b263dbf701e25705b0b2175a850a784",
-                "reference": "1f7ba14c4b263dbf701e25705b0b2175a850a784",
+                "url": "https://github.com/symfony/Yaml/archive/bed4fddc24392513e01b32a78d600b1272ed9a6c.zip",
+                "reference": "bed4fddc24392513e01b32a78d600b1272ed9a6c",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1349553479",
+            "time": "1352815684",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -416,7 +527,7 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                "reference": "ec4d4225a2cddeabda6deb45357140989bc18293"
+                "reference": "fefb00eadefe768c1e8415fc6faac6b1f84c81bc"
             },
             "require": {
                 "php": ">=5.3.2",
@@ -426,13 +537,14 @@
                 "ext-session": "*",
                 "typo3/fluid": "*",
                 "typo3/party": "*",
-                "doctrine/orm": "2.2.2",
+                "doctrine/orm": "2.3.*",
                 "doctrine/migrations": "*",
+                "doctrine/data-fixtures": "*",
                 "symfony/yaml": ">2.1.0",
                 "symfony/dom-crawler": ">2.0.16",
                 "typo3/flow-composer-installers": "*"
             },
-            "time": "1350465588",
+            "time": "1353504700",
             "type": "typo3-flow-framework",
             "installation-source": "source",
             "autoload": {
@@ -469,7 +581,6 @@
             "require-dev": {
                 "composer/composer": "1.0.*"
             },
-            "time": "1350315157",
             "type": "composer-installer",
             "extra": {
                 "class": "Composer\\Installers\\Installer"
@@ -510,7 +621,8 @@
                 "zend",
                 "silverstripe",
                 "TYPO3 Flow"
-            ]
+            ],
+            "time": "1350315157"
         },
         {
             "name": "typo3/fluid",
@@ -518,13 +630,13 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Fluid.git",
-                "reference": "913272d4260fd75610a195192969a926af48e94d"
+                "reference": "6e2c020c929ed7a48d6b08e6c77fa6a7c7ee9679"
             },
             "require": {
                 "typo3/flow-composer-installers": "*",
                 "typo3/flow": "*"
             },
-            "time": "1349283709",
+            "time": "1353435444",
             "type": "typo3-flow-framework",
             "installation-source": "source",
             "autoload": {
@@ -543,13 +655,13 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/Imagine.git",
-                "reference": "70d26f23230e84c94bb4ce15209cc374c7c94eae"
+                "reference": "202eda6ba3c4f30dbcfc14488c77c73d4b85e848"
             },
             "require": {
                 "typo3/flow": "*",
                 "imagine/imagine": "*"
             },
-            "time": "1349121824",
+            "time": "1352452833",
             "type": "typo3-flow-package",
             "installation-source": "source",
             "autoload": {
@@ -564,13 +676,13 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Media.git",
-                "reference": "e23f856e5c38f109c238e8cc88f4f1745000fd56"
+                "reference": "0ba6cdecea1f00f7f5ed55029e4c2f346770985b"
             },
             "require": {
                 "typo3/flow": "*",
                 "typo3/imagine": "*"
             },
-            "time": "1349173182",
+            "time": "1352404957",
             "type": "typo3-flow-package",
             "installation-source": "source",
             "autoload": {
@@ -586,13 +698,13 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Party.git",
-                "reference": "930a1d41535f8fbe771e215d04eba5f71ccdb5bc"
+                "reference": "aae5f6ee2cbf6adb1728bf23a04707347785f4a9"
             },
             "require": {
                 "typo3/flow-composer-installers": "*",
                 "typo3/flow": "*"
             },
-            "time": "1349341725",
+            "time": "1352382512",
             "type": "typo3-flow-framework",
             "installation-source": "source",
             "autoload": {
@@ -606,17 +718,38 @@
             "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard."
         },
         {
+            "name": "typo3/twitter-bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/FLOW3/Packages/Twitter.Bootstrap.git",
+                "reference": "c1343bce953a2d81419b60cac3b83fec6fa22318"
+            },
+            "require": {
+                "typo3/flow": "*"
+            },
+            "time": "1352404249",
+            "type": "typo3-flow-package",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "TYPO3\\Twitter\\Bootstrap": "Classes"
+                }
+            },
+            "description": "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. Packaged for use with TYPO3 Flow"
+        },
+        {
             "name": "typo3/welcome",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Welcome.git",
-                "reference": "44a146a59598a2e7e334372af0d480d4b9db5b5e"
+                "reference": "f05652e2215e3dfad89984bc4f1468e2546186f8"
             },
             "require": {
                 "typo3/flow": "*"
             },
-            "time": "1349282110",
+            "time": "1352314513",
             "type": "typo3-flow-framework",
             "installation-source": "source",
             "autoload": {
@@ -630,7 +763,82 @@
             "description": "This package provides a start screen for the TYPO3 Flow distribution\n\twith links to online resources."
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "mikey179/vfsStream",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikey179/vfsStream",
+                "reference": "v1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/mikey179/vfsStream/zipball/v1.1.0",
+                "reference": "v1.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2012-08-25 05:49:29",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "org\\bovigo\\vfs": "src/main/php"
+                }
+            },
+            "license": [
+                "BSD"
+            ],
+            "homepage": "http://vfs.bovigo.org/"
+        },
+        {
+            "name": "typo3/buildessentials",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/FLOW3/BuildEssentials.git",
+                "reference": "3084766f15019a2a029c22a5039cfe58f37f8f97"
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "typo3/flow-composer-installers": "*"
+            },
+            "time": "1352409208",
+            "type": "typo3-flow-build",
+            "installation-source": "source",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "TYPO3 Flow Build Toolchain Essentials"
+        },
+        {
+            "name": "typo3/kickstart",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Kickstart.git",
+                "reference": "7a4886a83d696a9e2db3f10286875b2cac9be723"
+            },
+            "require": {
+                "typo3/flow": "*"
+            },
+            "time": "1353509162",
+            "type": "typo3-flow-framework",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "TYPO3\\Kickstart": "Classes"
+                }
+            },
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "description": "A simple generator for controller and views."
+        }
+    ],
     "aliases": [
 
     ],
