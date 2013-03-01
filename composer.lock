@@ -1,5 +1,5 @@
 {
-    "hash": "6f588752d33affea6d4fddc65c2a7900",
+    "hash": "110b8a327645ccd9a0ad663cd0c6d04f",
     "packages": [
         {
             "name": "doctrine/common",
@@ -18,14 +18,12 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1348120518",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.3.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common": "lib/"
@@ -63,12 +61,13 @@
             "description": "Common Library for Doctrine projects",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
-                "collections",
-                "spl",
-                "eventmanager",
                 "annotations",
-                "persistence"
-            ]
+                "collections",
+                "eventmanager",
+                "persistence",
+                "spl"
+            ],
+            "time": "2012-09-20 05:55:18"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -76,25 +75,38 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "98e059213cd8bf70f1203a3c9acc3c7e8afc2c89"
+                "reference": "689bc2ae2a41dff1107d9d50e2daa4c349222869"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/data-fixtures/archive/98e059213cd8bf70f1203a3c9acc3c7e8afc2c89.zip",
-                "reference": "98e059213cd8bf70f1203a3c9acc3c7e8afc2c89",
+                "url": "https://api.github.com/repos/doctrine/data-fixtures/zipball/689bc2ae2a41dff1107d9d50e2daa4c349222869",
+                "reference": "689bc2ae2a41dff1107d9d50e2daa4c349222869",
                 "shasum": ""
             },
             "require": {
+                "doctrine/common": ">=2.2,<2.5-dev",
                 "php": ">=5.3.2"
             },
-            "time": "1353423624",
+            "require-dev": {
+                "doctrine/orm": ">=2.2,<2.5-dev"
+            },
+            "suggest": {
+                "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
+                "doctrine/orm": "For loading ORM fixtures",
+                "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
+            },
             "type": "library",
-            "installation-source": "source",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common\\DataFixtures": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -109,39 +121,39 @@
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "database"
-            ]
+            ],
+            "time": "2013-02-12 02:52:36"
         },
         {
             "name": "doctrine/dbal",
             "version": "2.3.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/dbal",
-                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f"
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "fd45c6f6baa618d871f3201fabe76df5043abb1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/292d5edd17e0a9b9a7ee9eb20d6ae1033059153f.zip",
-                "reference": "292d5edd17e0a9b9a7ee9eb20d6ae1033059153f",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/fd45c6f6baa618d871f3201fabe76df5043abb1e",
+                "reference": "fd45c6f6baa618d871f3201fabe76df5043abb1e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "doctrine/common": "2.3.*"
+                "doctrine/common": "2.3.*",
+                "php": ">=5.3.2"
             },
-            "time": "1352716871",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.3.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -169,28 +181,29 @@
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "database",
-                "persistence",
                 "dbal",
+                "persistence",
                 "queryobject"
-            ]
+            ],
+            "time": "2013-01-20 11:50:36"
         },
         {
             "name": "doctrine/migrations",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/migrations",
-                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43"
+                "url": "https://github.com/doctrine/migrations.git",
+                "reference": "e1f6efcd94993b493de5c6a413cbc327ea9c0caa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/migrations/archive/c1d875ce7d092dd1bc7508c3867b5c6b97431e43.zip",
-                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43",
+                "url": "https://api.github.com/repos/doctrine/migrations/zipball/e1f6efcd94993b493de5c6a413cbc327ea9c0caa",
+                "reference": "e1f6efcd94993b493de5c6a413cbc327ea9c0caa",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
-                "doctrine/dbal": ">=2.0,<2.5.x-dev"
+                "doctrine/dbal": ">=2.0,<2.5.x-dev",
+                "php": ">=5.3.2"
             },
             "require-dev": {
                 "symfony/console": "2.*",
@@ -199,14 +212,13 @@
             "suggest": {
                 "symfony/console": "to run the migration from the console"
             },
-            "time": "1350643044",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\DBAL\\Migrations": "lib"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL"
             ],
@@ -226,32 +238,32 @@
             "keywords": [
                 "database",
                 "migrations"
-            ]
+            ],
+            "time": "2012-12-27 16:39:29"
         },
         {
             "name": "doctrine/orm",
             "version": "2.3.x-dev",
             "source": {
                 "type": "git",
-                "url": "git://github.com/doctrine/doctrine2.git",
-                "reference": "77d060ab74212919f1eaace72842ea43bf420f43"
+                "url": "https://github.com/doctrine/doctrine2.git",
+                "reference": "304acf0a1af15ebe049231b84a7630c75ecbe62d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/doctrine2/archive/77d060ab74212919f1eaace72842ea43bf420f43.zip",
-                "reference": "77d060ab74212919f1eaace72842ea43bf420f43",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/304acf0a1af15ebe049231b84a7630c75ecbe62d",
+                "reference": "304acf0a1af15ebe049231b84a7630c75ecbe62d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
+                "doctrine/dbal": "2.3.*",
                 "ext-pdo": "*",
-                "symfony/console": "2.*",
-                "doctrine/dbal": "2.3.*"
+                "php": ">=5.3.2",
+                "symfony/console": "2.*"
             },
             "suggest": {
                 "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
             },
-            "time": "1352731781",
             "bin": [
                 "bin/doctrine",
                 "bin/doctrine.php"
@@ -262,12 +274,12 @@
                     "dev-master": "2.3.x-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Doctrine\\ORM": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -296,20 +308,21 @@
             "keywords": [
                 "database",
                 "orm"
-            ]
+            ],
+            "time": "2013-02-21 18:03:42"
         },
         {
             "name": "imagine/Imagine",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/avalanche123/Imagine",
-                "reference": "v0.3.0"
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "v0.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/avalanche123/Imagine/archive/v0.3.0.zip",
-                "reference": "v0.3.0",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/v0.4.1",
+                "reference": "v0.4.1",
                 "shasum": ""
             },
             "require": {
@@ -318,14 +331,13 @@
             "require-dev": {
                 "sami/sami": "dev-master"
             },
-            "time": "1343522118",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Imagine": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -339,11 +351,12 @@
             "description": "Image processing for PHP 5.3",
             "homepage": "http://imagine.readthedocs.org/",
             "keywords": [
-                "image manipulation",
-                "image processing",
                 "drawing",
-                "graphics"
-            ]
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2012-12-13 18:31:18"
         },
         {
             "name": "robertlemke/example-bookshop",
@@ -351,12 +364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/robertlemke/example-bookshop.git",
-                "reference": "cfd06e5610486dc4a12c0e887f859af8e432425a"
+                "reference": "b6f482e29aaae265a0a80c393e26fd59f9125358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/robertlemke/example-bookshop/get/cfd06e5610486dc4a12c0e887f859af8e432425a.zip",
-                "reference": "cfd06e5610486dc4a12c0e887f859af8e432425a",
+                "url": "https://bitbucket.org/robertlemke/example-bookshop/get/b6f482e29aaae265a0a80c393e26fd59f9125358.zip",
+                "reference": "b6f482e29aaae265a0a80c393e26fd59f9125358",
                 "shasum": ""
             },
             "require": {
@@ -364,15 +377,15 @@
                 "typo3/media": "*",
                 "typo3/twitter-bootstrap": "*"
             },
-            "time": "1350633141",
             "type": "typo3-flow-package",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "RobertLemke\\Example\\Bookshop": "Classes"
                 }
             },
-            "description": "An example application for the Getting Into Flow tutorial."
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "An example application for the Getting Into Flow tutorial.",
+            "time": "2012-11-21 19:58:38"
         },
         {
             "name": "symfony/console",
@@ -380,31 +393,30 @@
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console",
-                "reference": "003a487a674175a1d2e62f205ecd91ffe85554b1"
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "f65e34d058f0990a724f78e8d091dc0a20e439ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Console/archive/003a487a674175a1d2e62f205ecd91ffe85554b1.zip",
-                "reference": "003a487a674175a1d2e62f205ecd91ffe85554b1",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/f65e34d058f0990a724f78e8d091dc0a20e439ac",
+                "reference": "f65e34d058f0990a724f78e8d091dc0a20e439ac",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1353329932",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\Console\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -419,45 +431,45 @@
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "2013-01-31 21:39:01"
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/DomCrawler",
-                "reference": "9d95ebb0e1c1a037732a8899af5cc376db82561d"
+                "url": "https://github.com/symfony/DomCrawler.git",
+                "reference": "v2.2.0-RC3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/DomCrawler/archive/9d95ebb0e1c1a037732a8899af5cc376db82561d.zip",
-                "reference": "9d95ebb0e1c1a037732a8899af5cc376db82561d",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/v2.2.0-RC3",
+                "reference": "v2.2.0-RC3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/css-selector": "2.2.*"
+                "symfony/css-selector": ">=2.0,<3.0"
             },
             "suggest": {
                 "symfony/css-selector": "2.2.*"
             },
-            "time": "1353329932",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.2-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Symfony\\Component\\DomCrawler\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -472,39 +484,34 @@
                 }
             ],
             "description": "Symfony DomCrawler Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "2013-02-23 06:46:07"
         },
         {
             "name": "symfony/yaml",
-            "version": "dev-master",
+            "version": "2.1.x-dev",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Yaml",
-                "reference": "bed4fddc24392513e01b32a78d600b1272ed9a6c"
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "v2.1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/Yaml/archive/bed4fddc24392513e01b32a78d600b1272ed9a6c.zip",
-                "reference": "bed4fddc24392513e01b32a78d600b1272ed9a6c",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.1.8",
+                "reference": "v2.1.8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1352815684",
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
-                    "Symfony\\Component\\Yaml\\": ""
+                    "Symfony\\Component\\Yaml": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -519,7 +526,8 @@
                 }
             ],
             "description": "Symfony Yaml Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "2013-01-27 16:12:43"
         },
         {
             "name": "typo3/flow",
@@ -527,70 +535,67 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.FLOW3.git",
-                "reference": "fefb00eadefe768c1e8415fc6faac6b1f84c81bc"
+                "reference": "1f9fa1fc9bed7efea51994806f83fc91d6e4f2d6"
             },
             "require": {
-                "php": ">=5.3.2",
-                "ext-zlib": "*",
-                "ext-spl": "*",
+                "doctrine/data-fixtures": "*",
+                "doctrine/migrations": "*",
+                "doctrine/orm": "2.3.*",
                 "ext-json": ">=1.2.0",
                 "ext-session": "*",
+                "ext-spl": "*",
+                "ext-zlib": "*",
+                "php": ">=5.3.2",
+                "symfony/dom-crawler": "2.2.*",
+                "symfony/yaml": "2.1.*",
+                "typo3/flow-composer-installers": "*",
                 "typo3/fluid": "*",
-                "typo3/party": "*",
-                "doctrine/orm": "2.3.*",
-                "doctrine/migrations": "*",
-                "doctrine/data-fixtures": "*",
-                "symfony/yaml": ">2.1.0",
-                "symfony/dom-crawler": ">2.0.16",
-                "typo3/flow-composer-installers": "*"
+                "typo3/party": "*"
             },
-            "time": "1353504700",
             "type": "typo3-flow-framework",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Flow": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "authors": [
-                {
-                    "name": "TYPO3 Flow Development Team",
-                    "homepage": "http://typo3.org/teams/core-development-team/"
-                }
-            ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "keywords": [
-                "framework"
-            ]
+            "time": "2013-02-27 07:11:39"
         },
         {
             "name": "typo3/flow-composer-installers",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git://github.com/christianjul/installers.git",
-                "reference": "53318d52eeda45dee97be288b8f744be00662f37"
+                "url": "https://github.com/christianjul/installers.git",
+                "reference": "bf887890333e8c73a93701ffb09f71c914b8be35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/christianjul/installers/zipball/bf887890333e8c73a93701ffb09f71c914b8be35",
+                "reference": "bf887890333e8c73a93701ffb09f71c914b8be35",
+                "shasum": ""
             },
             "replace": {
                 "shama/baton": "*"
             },
             "require-dev": {
-                "composer/composer": "1.0.*"
+                "composer/composer": "1.0.*@dev"
             },
             "type": "composer-installer",
             "extra": {
                 "class": "Composer\\Installers\\Installer"
             },
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "Composer\\Installers\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -598,31 +603,35 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "installer",
+                "TYPO3 Flow",
+                "TYPO3 Neos",
+                "agl",
                 "cakephp",
-                "laravel",
+                "codeigniter",
+                "drupal",
+                "fuelphp",
+                "installer",
+                "joomla",
                 "kohana",
+                "laravel",
                 "li3",
                 "lithium",
-                "fuelphp",
-                "codeigniter",
-                "symfony",
+                "mako",
                 "phpbb",
                 "ppi",
-                "joomla",
-                "wordpress",
-                "drupal",
-                "zend",
                 "silverstripe",
-                "TYPO3 Flow"
+                "symfony",
+                "wordpress",
+                "zend"
             ],
-            "time": "1350315157"
+            "time": "2012-12-19 10:08:40"
         },
         {
             "name": "typo3/fluid",
@@ -630,24 +639,24 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Fluid.git",
-                "reference": "6e2c020c929ed7a48d6b08e6c77fa6a7c7ee9679"
+                "reference": "f988260b36a22115a334676e8b4a19a72cba7240"
             },
             "require": {
-                "typo3/flow-composer-installers": "*",
-                "typo3/flow": "*"
+                "typo3/flow": "*",
+                "typo3/flow-composer-installers": "*"
             },
-            "time": "1353435444",
             "type": "typo3-flow-framework",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Fluid": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 5.0, also backported to TYPO3 4.x"
+            "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 Neos, also backported to TYPO3 CMS",
+            "time": "2013-02-26 09:54:42"
         },
         {
             "name": "typo3/imagine",
@@ -658,17 +667,17 @@
                 "reference": "202eda6ba3c4f30dbcfc14488c77c73d4b85e848"
             },
             "require": {
-                "typo3/flow": "*",
-                "imagine/imagine": "*"
+                "imagine/imagine": "*",
+                "typo3/flow": "*"
             },
-            "time": "1352452833",
             "type": "typo3-flow-package",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Imagine": "Classes"
                 }
-            }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2012-11-09 09:20:33"
         },
         {
             "name": "typo3/media",
@@ -676,21 +685,21 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Media.git",
-                "reference": "0ba6cdecea1f00f7f5ed55029e4c2f346770985b"
+                "reference": "231f1ff2af530d27773c9edaf676375b9a6193c6"
             },
             "require": {
                 "typo3/flow": "*",
                 "typo3/imagine": "*"
             },
-            "time": "1352404957",
             "type": "typo3-flow-package",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Media": "Classes"
                 }
             },
-            "description": "The Media package"
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "The Media package",
+            "time": "2013-01-29 14:58:39"
         },
         {
             "name": "typo3/party",
@@ -698,24 +707,24 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Party.git",
-                "reference": "aae5f6ee2cbf6adb1728bf23a04707347785f4a9"
+                "reference": "b145b95d8671afe8e2f976899f6f413384df96f7"
             },
             "require": {
-                "typo3/flow-composer-installers": "*",
-                "typo3/flow": "*"
+                "typo3/flow": "*",
+                "typo3/flow-composer-installers": "*"
             },
-            "time": "1352382512",
             "type": "typo3-flow-framework",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Party": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard."
+            "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard.",
+            "time": "2013-02-26 18:03:13"
         },
         {
             "name": "typo3/twitter-bootstrap",
@@ -723,20 +732,20 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/Twitter.Bootstrap.git",
-                "reference": "c1343bce953a2d81419b60cac3b83fec6fa22318"
+                "reference": "360bbd60c85dada87a204a9c6a9e1197441867ba"
             },
             "require": {
                 "typo3/flow": "*"
             },
-            "time": "1352404249",
             "type": "typo3-flow-package",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Twitter\\Bootstrap": "Classes"
                 }
             },
-            "description": "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. Packaged for use with TYPO3 Flow"
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions. Packaged for use with TYPO3 Flow",
+            "time": "2013-01-17 19:40:43"
         },
         {
             "name": "typo3/welcome",
@@ -744,23 +753,23 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Welcome.git",
-                "reference": "f05652e2215e3dfad89984bc4f1468e2546186f8"
+                "reference": "27b3e27f12d1ad472a8c5a9f6732f8a864a20c55"
             },
             "require": {
                 "typo3/flow": "*"
             },
-            "time": "1352314513",
             "type": "typo3-flow-framework",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Welcome": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "description": "This package provides a start screen for the TYPO3 Flow distribution\n\twith links to online resources."
+            "description": "This package provides a start screen for the TYPO3 Flow distribution with links to online resources.",
+            "time": "2013-02-20 16:26:04"
         }
     ],
     "packages-dev": [
@@ -781,18 +790,18 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-08-25 05:49:29",
             "type": "library",
-            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "org\\bovigo\\vfs": "src/main/php"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
-            "homepage": "http://vfs.bovigo.org/"
+            "homepage": "http://vfs.bovigo.org/",
+            "time": "2012-08-25 05:49:29"
         },
         {
             "name": "typo3/buildessentials",
@@ -800,19 +809,22 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/BuildEssentials.git",
-                "reference": "3084766f15019a2a029c22a5039cfe58f37f8f97"
+                "reference": "6d94ba8ff0dd361e2684847fd41c03bfd8734ee8"
             },
             "require": {
                 "php": ">=5.3.2",
                 "typo3/flow-composer-installers": "*"
             },
-            "time": "1352409208",
             "type": "typo3-flow-build",
-            "installation-source": "source",
+            "extra": {
+                "installer-name": "BuildEssentials"
+            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "description": "TYPO3 Flow Build Toolchain Essentials"
+            "description": "TYPO3 Flow Build Toolchain Essentials",
+            "time": "2013-02-26 17:13:50"
         },
         {
             "name": "typo3/kickstart",
@@ -820,23 +832,23 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/FLOW3/Packages/TYPO3.Kickstart.git",
-                "reference": "7a4886a83d696a9e2db3f10286875b2cac9be723"
+                "reference": "568c98f34472e453559ead436eb5842ed31ddffd"
             },
             "require": {
                 "typo3/flow": "*"
             },
-            "time": "1353509162",
             "type": "typo3-flow-framework",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
                     "TYPO3\\Kickstart": "Classes"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0+"
             ],
-            "description": "A simple generator for controller and views."
+            "description": "A simple generator for controller and views.",
+            "time": "2013-01-15 09:53:01"
         }
     ],
     "aliases": [

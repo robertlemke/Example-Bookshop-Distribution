@@ -1,31 +1,35 @@
 {
-    "name": "robertlemke/example-bookshop-distribution",
-    "description" : "Distribution for the bookshop example",
-    "license": "LGPL-3.0+",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://ci.typo3.robertlemke.net/job/composer-packages/ws/repository/"
-        }
-    ],
-    "config": {
-        "vendor-dir": "Packages/Libraries",
-        "bin-dir": "bin"
-    },
-    "require": {
-        "typo3/flow": "dev-master",
-        "typo3/welcome": "dev-master",
-        "robertlemke/example-bookshop": "dev-master",
-        "typo3/twitter-bootstrap": "*"
-	 },
-    "require-dev": {
-        "typo3/kickstart": "dev-master",
-        "typo3/buildessentials": "dev-master",
-        "mikey179/vfsstream": "1.1.*"
-    },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-        "post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall"
-    }
+	"name": "robertlemke/example-bookshop-distribution",
+	"description": "Distribution for the bookshop example",
+	"license": "LGPL-3.0+",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://ci.typo3.robertlemke.net/job/composer-packages/ws/repository/"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/robertlemke/example-bookshop.git"
+		}
+	],
+	"config": {
+		"vendor-dir": "Packages/Libraries",
+		"bin-dir": "bin"
+	},
+	"require": {
+		"typo3/flow": "dev-master",
+		"typo3/welcome": "dev-master",
+		"robertlemke/example-bookshop": "dev-master",
+		"typo3/twitter-bootstrap": "*"
+	},
+	"require-dev": {
+		"typo3/kickstart": "dev-master",
+		"typo3/buildessentials": "dev-master",
+		"mikey179/vfsstream": "1.1.*"
+	},
+	"minimum-stability": "dev",
+	"scripts": {
+		"post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+		"post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall"
+	}
 }
