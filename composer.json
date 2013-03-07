@@ -6,10 +6,6 @@
 		{
 			"type": "composer",
 			"url": "http://ci.typo3.robertlemke.net/job/composer-packages/ws/repository/"
-		},
-		{
-			"type": "vcs",
-			"url": "https://github.com/robertlemke/example-bookshop.git"
 		}
 	],
 	"config": {
@@ -20,7 +16,9 @@
 		"typo3/flow": "dev-master",
 		"typo3/welcome": "dev-master",
 		"robertlemke/example-bookshop": "dev-master",
-		"typo3/twitter-bootstrap": "*"
+		"typo3/twitter-bootstrap": "*",
+        "phpunit/phpunit": "*",
+        "typo3/surf": "*"
 	},
 	"require-dev": {
 		"typo3/kickstart": "dev-master",
