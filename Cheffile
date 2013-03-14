@@ -1,8 +1,19 @@
 site "http://community.opscode.com/api/v1"
 
 cookbook 'apt', :git => 'https://github.com/opscode-cookbooks/apt.git'
+cookbook 'logrotate', :git => 'https://github.com/opscode-cookbooks/logrotate.git'
 cookbook 'git', :git => 'https://github.com/opscode-cookbooks/git.git'
 cookbook 'apache2', :git => 'https://github.com/opscode-cookbooks/apache2.git'
+cookbook 'mysql', :git =>'https://github.com/opscode-cookbooks/mysql.git'
 cookbook 'php', :git => 'https://github.com/opscode-cookbooks/php.git'
 cookbook 'application', :git => 'https://github.com/opscode-cookbooks/application.git'
 cookbook 'application_php', :git => 'https://github.com/opscode-cookbooks/application_php.git'
+cookbook 'database', :git => 'https://github.com/opscode-cookbooks/database.git'
+cookbook 'composer', :git => 'https://github.com/geoffreytran/chef-composer.git'
+cookbook 'hostsfile', :git => 'https://github.com/customink-webops/hostsfile.git'
+cookbook 'couchdb', :git => 'https://github.com/opscode-cookbooks/couchdb.git'
+
+cookbook 'robertlemke-locales', :git => 'https://github.com/robertlemke/cookbook-locales.git'
+cookbook 'typo3flow', :git => 'https://github.com/robertlemke/cookbook-typo3flow.git'
+cookbook 'robertlemke-baseserver', :git => 'https://github.com/robertlemke/cookbook-baseserver.git'
+cookbook 'robertlemke-webserver', :git => 'https://github.com/robertlemke/cookbook-webserver.git'

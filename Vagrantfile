@@ -1,39 +1,35 @@
 Vagrant::Config.run do |config|
-  config.vm.box = "lucid64"
-  config.vm.box_url = "http://files.vagrantup.com/lucid64.box"
+	config.vm.box = "quantal64-rl"
+	config.vm.box_url = "http://dl.dropbox.com/u/1418806/vagrant-ubuntu-quantal64-rl.box"
 
-  # Forward the vm's port 80 to your 8080
-  # config.vm.forward_port 80, 8080
-  # config.vm.forward_port 443, 4433
+	config.vm.network :hostonly, "33.33.33.10"
 
-  config.vm.network :hostonly, "10.11.12.2"
+	config.vm.share_folder("application", "/var/www/bookshop/releases/vagrant", ".", :nfs => true)
 
-  config.vm.customize ["modifyvm", :id, "--memory", 768]
+	config.vm.customize [
+		"modifyvm", :id,
+		"--name", "Bookshop",
+		"--cpus", "2",
+		"--memory", "1024"
+	]
+	config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/web", "1"]
 
-  config.vm.share_folder("www-data", "/vagrant", ".", :nfs => true)
+	config.ssh.forward_agent = true
 
-  config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["Build/Chef/cookbooks", "Build/Chef/site-cookbooks"]
+	config.vm.provision :chef_solo do |chef|
+		chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
-    chef.add_recipe "apt"
-    chef.add_recipe "openssl"
-    chef.add_recipe "apache2"
-    chef.add_recipe "mysql"
-    chef.add_recipe "mysql::server"
-    chef.add_recipe "php"
-    chef.add_recipe "php::module_apc"
-    chef.add_recipe "php::module_curl"
-    chef.add_recipe "php::module_mysql"
-    chef.add_recipe "apache2::mod_php5"
-    chef.add_recipe "apache2::mod_rewrite"
-    chef.add_recipe "example-bookshop"
+		chef.add_recipe "robertlemke-example-bookshop"
 
-    chef.json = {
-      :mysql => {
-        :server_root_password => 'root',
-        :bind_address => '127.0.0.1'
-      }
-    }
+		chef.json = {
+			mysql: {
+				server_root_password: "root",
+				server_repl_password: "root",
+				server_debian_password: "root",
+				bind_address: '127.0.0.1'
+			}
+		}
 
-  end
+	end
+
 end
