@@ -1,0 +1,33 @@
+{
+	"defaults": {
+		"type": "gerrit",
+		"gerrit_api_endpoint": "https://review.typo3.org/",
+		"gerrit_git": "git.typo3.org"
+	},
+	"changes": [
+		{
+			"name": "[WIP][FEATURE] Improve resolving of view",
+			"type": "gerrit",
+			"path": "Packages/Framework/TYPO3.Flow",
+			"change_id": "24483"
+		},
+		{
+			"name": "[WIP][FEATURE] A whole new media management",
+			"type": "gerrit",
+			"path": "Packages/Application/TYPO3.Media",
+			"change_id": "24484"
+		},
+		{
+			"name": "[WIP][TASK] Adjustments for new resource management",
+			"type": "gerrit",
+			"path": "Packages/Framework/TYPO3.Fluid",
+			"change_id": "24498"
+		},
+		{
+			"name": "[WIP][TASK] Adjust to Flow 2.2 Resource Management",
+			"type": "gerrit",
+			"path": "Packages/Application/TYPO3.Twitter.Bootstrap",
+			"change_id": "24499"
+		}
+	]
+}
